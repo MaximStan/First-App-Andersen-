@@ -11,6 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        val textHelloWorld = findViewById<View>(R.id.textView)
+        val buttonHelloAndersen = findViewById<View>(R.id.hello_button)
+
+        buttonHelloAndersen.setOnClickListener {
+            textHelloWorld.isVisible = true
+        }
+
+
+
 
     }
 }
